@@ -1,0 +1,10 @@
+//
+//  SampleCode.xcconfig
+//  SwiftUIDemo
+//
+//  Created by 张博 on 2024/12/7.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SAMPLE_CODE_DISAMBIGUATOR=${DEVELOPMENT_TEAM}
