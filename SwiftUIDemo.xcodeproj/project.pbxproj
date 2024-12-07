@@ -45,6 +45,7 @@
 		9ECEDEF02D0433C600CFE1FD /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		9ECEDEF12D0433C600CFE1FD /* SwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9ECEDEF62D04340000CFE1FD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		9ECEDEF82D0439FB00CFE1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		9ECEDE9D2D0432C300CFE1FD = {
 			isa = PBXGroup;
 			children = (
+				9ECEDEF82D0439FB00CFE1FD /* README.md */,
 				9ECEDEE82D0433BF00CFE1FD /* SwiftUIDemo */,
 				9ECEDEEE2D0433C300CFE1FD /* SwiftUIDemoTests */,
 				9ECEDEF22D0433C600CFE1FD /* SwiftUIDemoUITests */,
