@@ -8,15 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab: Tabs = .views
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selectedTab) {
+            Tab("ResearchViewsView", systemImage: "tray.and.arrow.down.fill", value: .views) {
+                ResearchViewsView()
+            }
+            .badge(2)
+            
+            Tab("ResearchMidifiersView", systemImage: "tray.and.arrow.down.fill", value: .midifiers) {
+                ResearchMidifiersView()
+            }
+            .badge(2)   
         }
-        .padding()
     }
+}
+
+enum Tabs: Equatable, Hashable {
+
+    
+    case views
+    case midifiers
 }
 
 #Preview {

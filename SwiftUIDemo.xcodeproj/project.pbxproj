@@ -14,6 +14,12 @@
 		9ECEDEEF2D0433C300CFE1FD /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDEED2D0433C300CFE1FD /* SwiftUIDemoTests.swift */; };
 		9ECEDEF32D0433C600CFE1FD /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDEF02D0433C600CFE1FD /* SwiftUIDemoUITests.swift */; };
 		9ECEDEF42D0433C600CFE1FD /* SwiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDEF12D0433C600CFE1FD /* SwiftUIDemoUITestsLaunchTests.swift */; };
+		9ECEDEFD2D04475400CFE1FD /* EditButtonResearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDEFC2D04475400CFE1FD /* EditButtonResearch.swift */; };
+		9ECEDF022D046C4C00CFE1FD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF012D044D4B00CFE1FD /* StringExtension.swift */; };
+		9ECEDF042D046D9600CFE1FD /* EditButtonLocalizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9ECEDF032D046D9600CFE1FD /* EditButtonLocalizable.xcstrings */; };
+		9ECEDF082D047DFA00CFE1FD /* EditModeResearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF072D047DFA00CFE1FD /* EditModeResearch.swift */; };
+		9ECEDF0B2D04A33B00CFE1FD /* ResearchViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */; };
+		9ECEDF0E2D04A36100CFE1FD /* ResearchMidifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		9ECEDEF12D0433C600CFE1FD /* SwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9ECEDEF62D04340000CFE1FD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		9ECEDEF82D0439FB00CFE1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9ECEDEFC2D04475400CFE1FD /* EditButtonResearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonResearch.swift; sourceTree = "<group>"; };
+		9ECEDF012D044D4B00CFE1FD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9ECEDF032D046D9600CFE1FD /* EditButtonLocalizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = EditButtonLocalizable.xcstrings; sourceTree = "<group>"; };
+		9ECEDF072D047DFA00CFE1FD /* EditModeResearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeResearch.swift; sourceTree = "<group>"; };
+		9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewsView.swift; sourceTree = "<group>"; };
+		9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchMidifiersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			children = (
 				9ECEDEF82D0439FB00CFE1FD /* README.md */,
 				9ECEDEE82D0433BF00CFE1FD /* SwiftUIDemo */,
+				9ECEDF002D044D3300CFE1FD /* Extensions */,
 				9ECEDEEE2D0433C300CFE1FD /* SwiftUIDemoTests */,
 				9ECEDEF22D0433C600CFE1FD /* SwiftUIDemoUITests */,
 				9ECEDEF52D0433C900CFE1FD /* Configuration */,
@@ -106,10 +119,13 @@
 		9ECEDEE82D0433BF00CFE1FD /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9ECEDEE72D0433BF00CFE1FD /* SwiftUIDemoApp.swift */,
+				9ECEDEE62D0433BF00CFE1FD /* ContentView.swift */,
+				9ECEDF092D04A31600CFE1FD /* ResearchViews */,
+				9ECEDF0C2D04A34700CFE1FD /* ResearchModifiersView */,
+				9ECEDF052D04713700CFE1FD /* EditMode */,
 				9ECEDEE42D0433BF00CFE1FD /* Preview Content */,
 				9ECEDEE52D0433BF00CFE1FD /* Assets.xcassets */,
-				9ECEDEE62D0433BF00CFE1FD /* ContentView.swift */,
-				9ECEDEE72D0433BF00CFE1FD /* SwiftUIDemoApp.swift */,
 			);
 			path = SwiftUIDemo;
 			sourceTree = "<group>";
@@ -137,6 +153,40 @@
 				9ECEDEF62D04340000CFE1FD /* SampleCode.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		9ECEDF002D044D3300CFE1FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9ECEDF012D044D4B00CFE1FD /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9ECEDF052D04713700CFE1FD /* EditMode */ = {
+			isa = PBXGroup;
+			children = (
+				9ECEDEFC2D04475400CFE1FD /* EditButtonResearch.swift */,
+				9ECEDF072D047DFA00CFE1FD /* EditModeResearch.swift */,
+				9ECEDF032D046D9600CFE1FD /* EditButtonLocalizable.xcstrings */,
+			);
+			path = EditMode;
+			sourceTree = "<group>";
+		};
+		9ECEDF092D04A31600CFE1FD /* ResearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */,
+			);
+			path = ResearchViews;
+			sourceTree = "<group>";
+		};
+		9ECEDF0C2D04A34700CFE1FD /* ResearchModifiersView */ = {
+			isa = PBXGroup;
+			children = (
+				9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */,
+			);
+			path = ResearchModifiersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,11 +275,12 @@
 				};
 			};
 			buildConfigurationList = 9ECEDEA12D0432C300CFE1FD /* Build configuration list for PBXProject "SwiftUIDemo" */;
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9ECEDE9D2D0432C300CFE1FD;
 			minimizedProjectReferenceProxies = 1;
@@ -251,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ECEDEE92D0433BF00CFE1FD /* Preview Assets.xcassets in Resources */,
+				9ECEDF042D046D9600CFE1FD /* EditButtonLocalizable.xcstrings in Resources */,
 				9ECEDEEA2D0433BF00CFE1FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECEDF0B2D04A33B00CFE1FD /* ResearchViewsView.swift in Sources */,
+				9ECEDF022D046C4C00CFE1FD /* StringExtension.swift in Sources */,
+				9ECEDF082D047DFA00CFE1FD /* EditModeResearch.swift in Sources */,
 				9ECEDEEB2D0433BF00CFE1FD /* ContentView.swift in Sources */,
+				9ECEDF0E2D04A36100CFE1FD /* ResearchMidifiersView.swift in Sources */,
 				9ECEDEEC2D0433BF00CFE1FD /* SwiftUIDemoApp.swift in Sources */,
+				9ECEDEFD2D04475400CFE1FD /* EditButtonResearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +430,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -429,6 +487,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -442,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = QML5L599GM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -449,7 +509,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = QML5L599GM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -479,7 +540,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,7 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,7 +596,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
