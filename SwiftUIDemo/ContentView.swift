@@ -11,23 +11,56 @@ struct ContentView: View {
     @State var selectedTab: Tabs = .views
     
     var body: some View {
-        TabView(selection: $selectedTab) {
-            Tab("ResearchViewsView", systemImage: "tray.and.arrow.down.fill", value: .views) {
-                ResearchViewsView()
+        
+        NavigationView {
+            List {
+                Section {
+                    NavigationLink {
+                        ResearchTabView()
+                    } label: {
+                        Label("Tab", systemImage: "dishwasher.circle")
+                    }
+                    
+                } header: {
+                    Text("Tab 探索")
+                }
+                
+                Section("编辑") {
+                    NavigationLink {
+                        EditButtonResearch()
+                    } label: {
+                        Label("EditButton", systemImage: "rays")
+                    }
+                    
+                    NavigationLink {
+                        EditModeResearch()
+                    } label: {
+                        Label("EditMode", systemImage: "rays")
+                    }
+                }
+                
+                Section("探索Gauge") {
+                    NavigationLink {
+                        ResearchGaugeView()
+                    } label: {
+                        Label("Gauge", systemImage: "brain.head.profile")
+                    }
+                    
+                    NavigationLink {
+                        StyledGauge()
+                    } label: {
+                        Label("StyledGauge", systemImage: "brain.head.profile.fill")
+                    }
+                }
             }
-            .badge(2)
-            
-            Tab("ResearchMidifiersView", systemImage: "tray.and.arrow.down.fill", value: .midifiers) {
-                ResearchMidifiersView()
-            }
-            .badge(2)   
         }
+        .navigationTitle("列表")
     }
 }
 
 enum Tabs: Equatable, Hashable {
-
     
+    case swiftUIViews
     case views
     case midifiers
 }

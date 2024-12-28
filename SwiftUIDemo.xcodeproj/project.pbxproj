@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E71F5E92D18271800AAC5CE /* SwiftUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71F5E82D18271200AAC5CE /* SwiftUIViews.swift */; };
+		9E71F5ED2D185B7D00AAC5CE /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71F5EC2D185B7900AAC5CE /* TabView.swift */; };
+		9E71F5EF2D18608A00AAC5CE /* ResearchGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71F5EE2D18608600AAC5CE /* ResearchGaugeView.swift */; };
 		9ECEDEE92D0433BF00CFE1FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECEDEE32D0433BF00CFE1FD /* Preview Assets.xcassets */; };
 		9ECEDEEA2D0433BF00CFE1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECEDEE52D0433BF00CFE1FD /* Assets.xcassets */; };
 		9ECEDEEB2D0433BF00CFE1FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDEE62D0433BF00CFE1FD /* ContentView.swift */; };
@@ -19,7 +22,6 @@
 		9ECEDF042D046D9600CFE1FD /* EditButtonLocalizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9ECEDF032D046D9600CFE1FD /* EditButtonLocalizable.xcstrings */; };
 		9ECEDF082D047DFA00CFE1FD /* EditModeResearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF072D047DFA00CFE1FD /* EditModeResearch.swift */; };
 		9ECEDF0B2D04A33B00CFE1FD /* ResearchViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */; };
-		9ECEDF0E2D04A36100CFE1FD /* ResearchMidifiersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E71F5E82D18271200AAC5CE /* SwiftUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViews.swift; sourceTree = "<group>"; };
+		9E71F5EC2D185B7900AAC5CE /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		9E71F5EE2D18608600AAC5CE /* ResearchGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchGaugeView.swift; sourceTree = "<group>"; };
 		9ECEDEA62D0432C300CFE1FD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECEDEB62D0432C600CFE1FD /* SwiftUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECEDEC02D0432C600CFE1FD /* SwiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +62,6 @@
 		9ECEDF032D046D9600CFE1FD /* EditButtonLocalizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = EditButtonLocalizable.xcstrings; sourceTree = "<group>"; };
 		9ECEDF072D047DFA00CFE1FD /* EditModeResearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeResearch.swift; sourceTree = "<group>"; };
 		9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewsView.swift; sourceTree = "<group>"; };
-		9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchMidifiersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E71F5EA2D18271C00AAC5CE /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E71F5EE2D18608600AAC5CE /* ResearchGaugeView.swift */,
+				9E71F5E82D18271200AAC5CE /* SwiftUIViews.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		9E71F5EB2D185AFC00AAC5CE /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				9E71F5EC2D185B7900AAC5CE /* TabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		9ECEDE9D2D0432C300CFE1FD = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +142,9 @@
 			children = (
 				9ECEDEE72D0433BF00CFE1FD /* SwiftUIDemoApp.swift */,
 				9ECEDEE62D0433BF00CFE1FD /* ContentView.swift */,
+				9E71F5EA2D18271C00AAC5CE /* SwiftUIViews */,
+				9E71F5EB2D185AFC00AAC5CE /* TabView */,
 				9ECEDF092D04A31600CFE1FD /* ResearchViews */,
-				9ECEDF0C2D04A34700CFE1FD /* ResearchModifiersView */,
 				9ECEDF052D04713700CFE1FD /* EditMode */,
 				9ECEDEE42D0433BF00CFE1FD /* Preview Content */,
 				9ECEDEE52D0433BF00CFE1FD /* Assets.xcassets */,
@@ -179,14 +201,6 @@
 				9ECEDF0A2D04A33B00CFE1FD /* ResearchViewsView.swift */,
 			);
 			path = ResearchViews;
-			sourceTree = "<group>";
-		};
-		9ECEDF0C2D04A34700CFE1FD /* ResearchModifiersView */ = {
-			isa = PBXGroup;
-			children = (
-				9ECEDF0D2D04A36100CFE1FD /* ResearchMidifiersView.swift */,
-			);
-			path = ResearchModifiersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,10 +344,12 @@
 			files = (
 				9ECEDF0B2D04A33B00CFE1FD /* ResearchViewsView.swift in Sources */,
 				9ECEDF022D046C4C00CFE1FD /* StringExtension.swift in Sources */,
+				9E71F5ED2D185B7D00AAC5CE /* TabView.swift in Sources */,
 				9ECEDF082D047DFA00CFE1FD /* EditModeResearch.swift in Sources */,
 				9ECEDEEB2D0433BF00CFE1FD /* ContentView.swift in Sources */,
-				9ECEDF0E2D04A36100CFE1FD /* ResearchMidifiersView.swift in Sources */,
+				9E71F5EF2D18608A00AAC5CE /* ResearchGaugeView.swift in Sources */,
 				9ECEDEEC2D0433BF00CFE1FD /* SwiftUIDemoApp.swift in Sources */,
+				9E71F5E92D18271800AAC5CE /* SwiftUIViews.swift in Sources */,
 				9ECEDEFD2D04475400CFE1FD /* EditButtonResearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,13 +525,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -540,13 +556,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -561,9 +577,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -579,9 +595,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -596,9 +612,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -613,9 +629,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo--SAMPLE-CODE-DISAMBIGUATOR-.SwiftUIDemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.swiftuidemo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
